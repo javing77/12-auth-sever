@@ -1,7 +1,14 @@
 // Servidore express y rutas
 const express = require('express')
 const app = express()
-const port = 4000
+
+require('dotenv').config()
+const port = process.env.PORT 
+// console.log(process.env);
+
+
+//Directorio Publico
+app.use(express.static('public'))
 
 // Cors para permitir peticiones desde otras paginas
 const cors = require('cors')
