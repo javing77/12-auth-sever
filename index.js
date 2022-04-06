@@ -7,6 +7,10 @@ const port = process.env.PORT
 // console.log(process.env);
 
 
+//Conexion a la base de datos
+const { dbConnection } = require('./db/config')
+dbConnection()
+
 //Directorio Publico
 app.use(express.static('public'))
 
