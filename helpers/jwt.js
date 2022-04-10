@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
  
- const generarJWT = (uid, name) => {
+ const generarJWT = (uid, name ) => {
 
-    const payload = {uid, name};
+    const payload = {uid, name };
 
     //Crear una promesa manual
     return new Promise ( (resolve, reject) => {
